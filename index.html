@@ -5,51 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/moon.png" type="image/x-icon" />
-
-    <!--=============== REMIXICONS ===============-->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      rel="shortcut icon"
+      href="assets/img/shooting-star.png"
+      type="image/x-icon"
     />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!--=============== REMIX ICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-    <title>My Website</title>
+    <!--=============== STYLE CSS ===============-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Interstellar | View of the Night Sky</title>
   </head>
   <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-      <nav class="nav conainer">
-        <a href="#" class="nav__logo">
-          <img src="assets/img/moon.svg" alt="logo" />
-        </a>
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Interstellar</a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-            <li>
-              <a href="home" class="nav__link">Home</a>
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
 
-            <li>
-              <a href="package" class="nav__link">Our Package</a>
+            <li class="nav__item">
+              <a href="#package" class="nav__link">Gallery</a>
             </li>
 
-            <li>
-              <a href="contact" class="nav__link">Call Us</a>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Call Us</a>
             </li>
           </ul>
 
           <!-- Close button -->
           <div class="nav__close" id="nav-close">
-            <i class="ri-close-large-line"></i>
+            <i class="ri-close-line"></i>
           </div>
         </div>
 
         <!-- Toggle button -->
         <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-menu-line"></i>
+          <i class="ri-menu-fill"></i>
         </div>
       </nav>
     </header>
@@ -57,33 +59,399 @@
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
-      <section class="home section" id="home"></section>
+      <section class="home section" id="home">
+        <img
+          src="assets/img/night-sky-comet.jpg"
+          alt="home image"
+          class="home__bg"
+        />
+        <div class="home__shadow"></div>
 
-      <!--==================== WORKS ====================-->
-      <section class="work section" id="work"></section>
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h3 class="home__subtitle">Welcome to Interstellar</h3>
 
-      <!--==================== INFO ====================-->
-      <section class="info section" id="info"></section>
+            <h1 class="home__title">
+              Explore <br />
+              The Universe
+            </h1>
 
-      <!--==================== SERVICES ====================-->
-      <section class="services section" id="services"></section>
+            <p class="home__description">
+              Grow your own flowers, love your own universe. You can never see
+              the future, but if you want to see the past, just look at the
+              stars above.
+            </p>
+
+            <a href="#package" class="button">
+              Start Your Journey <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+
+          <div class="home__cards grid">
+            <article class="home__card">
+              <img
+                src="assets/img/night-sky-desert.jpg"
+                alt="home image"
+                class="home__card-img"
+              />
+              <h3 class="home__card-title">Night sky over the Desert</h3>
+              <div class="home__card-shadow"></div>
+            </article>
+
+            <article class="home__card">
+              <img
+                src="assets/img/night-sky-forest.jpg"
+                alt="home image"
+                class="home__card-img"
+              />
+              <h3 class="home__card-title">Night sky over the Forest</h3>
+              <div class="home__card-shadow"></div>
+            </article>
+
+            <article class="home__card">
+              <img
+                src="assets/img/night-sky-lake.jpg"
+                alt="home image"
+                class="home__card-img"
+              />
+              <h3 class="home__card-title">Night sky over the Lake</h3>
+              <div class="home__card-shadow"></div>
+            </article>
+
+            <article class="home__card">
+              <img
+                src="assets/img/night-sky-mountain.jpg"
+                alt="home image"
+                class="home__card-img"
+              />
+              <h3 class="home__card-title">Night sky over the Mountain</h3>
+              <div class="home__card-shadow"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== OUR PACKAGE ====================-->
+      <section class="package section" id="package">
+        <h2 class="section__title">
+          Enjoy The Beauty <br />
+          Of The Stars
+        </h2>
+
+        <div class="package__container container grid">
+          <article class="package__card">
+            <div class="package__image">
+              <img
+                src="assets/img/night-sky-1.jpg"
+                alt="package image"
+                class="package__img"
+              />
+              <div class="package__shadow"></div>
+            </div>
+            <h2 class="package__title">Alta Gracia</h2>
+
+            <div class="package__location">
+              <i class="ri-map-pin-line"></i>
+              <span>Argentina</span>
+            </div>
+          </article>
+
+          <article class="package__card">
+            <div class="package__image">
+              <img
+                src="assets/img/night-sky-2.jpg"
+                alt="package image"
+                class="package__img"
+              />
+              <div class="package__shadow"></div>
+            </div>
+
+            <h2 class="package__title">Hakuba</h2>
+
+            <div class="package__location">
+              <i class="ri-map-pin-line"></i>
+              <span>Japan</span>
+            </div>
+          </article>
+
+          <article class="package__card">
+            <div class="package__image">
+              <img
+                src="assets/img/night-sky-3.jpg"
+                alt="package image"
+                class="package__img"
+              />
+              <div class="package__shadow"></div>
+            </div>
+            <h2 class="package__title">Matterhorn Mountain</h2>
+
+            <div class="package__location">
+              <i class="ri-map-pin-line"></i>
+              <span>Switzerland</span>
+            </div>
+          </article>
+
+          <article class="package__card">
+            <div class="package__image">
+              <img
+                src="assets/img/night-sky-4.jpg"
+                alt="package image"
+                class="package__img"
+              />
+              <div class="package__shadow"></div>
+            </div>
+            <h2 class="package__title">Mont Blanc</h2>
+
+            <div class="package__location">
+              <i class="ri-map-pin-line"></i>
+              <span>France</span>
+            </div>
+          </article>
+
+          <article class="package__card">
+            <div class="package__image">
+              <img
+                src="assets/img/night-sky-5.jpg"
+                alt="package image"
+                class="package__img"
+              />
+              <div class="package__shadow"></div>
+            </div>
+            <h2 class="package__title">Mt. Rainier</h2>
+
+            <div class="package__location">
+              <i class="ri-map-pin-line"></i>
+              <span>United States</span>
+            </div>
+          </article>
+
+          <article class="package__card">
+            <div class="package__image">
+              <img
+                src="assets/img/night-sky-6.jpg"
+                alt="package image"
+                class="package__img"
+              />
+              <div class="package__shadow"></div>
+            </div>
+            <h2 class="package__title">Sappada</h2>
+
+            <div class="package__location">
+              <i class="ri-map-pin-line"></i>
+              <span>Italy</span>
+            </div>
+          </article>
+        </div>
+      </section>
 
       <!--==================== CONTACT ====================-->
-      <section class="contact section" id="contact"></section>
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__data">
+            <h2 class="section__title">Contact Us</h2>
+
+            <p class="contact__description">
+              Are you an Astrophile or Stargazer? Have you ever looked up at the
+              stars in the night sky? Tell us about your feelings when you look
+              at the night sky full of stars.
+            </p>
+
+            <form action="" class="contact__form">
+              <p class="email__description">Your Name</p>
+              <input
+                type="name"
+                placeholder="Enter your first and last name"
+                class="contact__input"
+              />
+
+              <p class="email__description">Email Address</p>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="contact__input"
+              />
+
+              <p class="menu__description">
+                What do you like most about space?
+              </p>
+              <div class="dropdown">
+                <div class="select">
+                  <span class="selected">Star</span>
+                  <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                  <li>Planet</li>
+                  <li class="active">Star</li>
+                  <li>Nebula</li>
+                  <li>Supernova</li>
+                  <li>Galaxy</li>
+                </ul>
+              </div>
+
+              <button class="contact__button button">
+                Convey Your Feelings<i class="ri-arrow-right-line"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="contact__image">
+            <img
+              src="assets/img/night-sky.jpg"
+              alt="contact image"
+              class="contact__img"
+            />
+
+            <img
+              src="assets/img/night-sky-comet.jpg"
+              alt="contact image"
+              class="contact__img"
+            />
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div>
+            <a href="# " class="footer__logo">Interstellar</a>
+
+            <p class="footer__description">
+              Observe the stars <br />
+              in the night sky with us <br />
+              and explore the vastness <br />
+              of the universe.
+            </p>
+          </div>
+
+          <div class="footer__data grid">
+            <div>
+              <h3 class="footer__title">About</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="#" class="footer__link">About Us</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Features</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">News & Blog</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__title">Company</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="#" class="footer__link">FAQs</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">History</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__title">Contact</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="#" class="footer__link">Call Center</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Support Center</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__title">Support</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="#" class="footer__link">Privacy Policy</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Terms & Services</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Payments</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__group">
+          <div class="footer__social">
+            <a
+              href="https://discord.com/channels/@me/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-discord-line"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/i.kiylacs/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+
+            <a
+              href="https://x.com/i_kiylacs/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-twitter-line"></i>
+            </a>
+
+            <a
+              href="https://www.youtube.com/@iammikesky/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-youtube-line"></i>
+            </a>
+          </div>
+
+          <span class="footer__copy">
+            &#169; Copyright Mikesky. All rights reserved
+          </span>
+        </div>
+      </div>
+    </footer>
 
     <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
 
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src=""></script>
-
-    <!--=============== EMAIL JS ===============-->
-    <script src=""></script>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="js/scrollreveal.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
